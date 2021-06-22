@@ -21,7 +21,9 @@
     display: grid;
     width: 100%;
     grid-template-columns: 0.2fr 0.6fr 0.2fr;
-    font-size: clamp(16px, 5vw, 26px);
+    align-content: center;
+    justify-items: center;
+    font-size: clamp(16px, 3vw, 22px);
     font-family: manrope;
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
