@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: http://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="100%"
+    height="auto"
+    viewBox="0 0 738 360">
+<defs>
+  <filter id="f4" x="0" y="0" width="200%" height="200%">
+    <feDropShadow dx="20" dy="25" stdDeviation="0" flood-color="#a29282" flood-opacity="1"/>
+    <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+  </filter>
+</defs>
+<path filter="url(#f4)" id="flag" transform="translate(21.6, 23.044776157)" fill="#e3cfae" fill-rule="evenodd" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 9.35522C239.4 168.955 513.12 -45.9648 694.8 9.35522C694.8 64.2192 694.8 155.659 694.8 283.675C522.12 157.675 380.16 401.035 0 283.675C0 155.659 0 64.2192 0 9.35522Z"/>
+<text>
+  <textPath xlink:href="#flag" startOffset="0">
+      <tspan dx="150" dy="180" fill="black" font-size="200">Skills</tspan>
+  </textPath>
+</text>
+</svg>

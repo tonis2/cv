@@ -1,0 +1,18 @@
+.page-title {
+    width: 40vw;
+    height: auto;
+    display: block;
+   
+}
+
+.page-title svg text {
+    font-family: newsflash;
+}
+
+.page-title svg text .title {
+    font-size: 4vw;
+}
+.page-title svg text .second-title {
+    font-size: 3vw;
+}
+

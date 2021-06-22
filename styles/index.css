@@ -1,0 +1,76 @@
+@import url("./page.css");
+
+
+:root {
+    --red: #fc5c65;
+    --green: #20bf6b;
+    --topaz: #0fb9b1;
+    --blue: #4b7bec;
+    --black: #4b6584;
+    --grey: #778ca3;
+    --white: #d1d8e0;
+    --yellow:#e3cfae;
+    --yellow2:#f1c40f;
+    --gray-2: #eee;
+	--gray-3: #ededed;
+    --title: "EB Garamond", serif;
+    --semi-title: "Playfair Display", serif;
+    --text: "Manrope", sans-serif;
+  }
+
+  
+@font-face {
+    font-family: "newspaper";
+    src: url("../fonts/newspaper.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Deutschlander";
+    src: url("../fonts/Deutschlander.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "newsflash";
+    src: url("../fonts/newsflash.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Klaber";
+    src: url("../fonts/Klaber.woff2") format('woff2');
+}
+
+/* @font-face {
+    font-family: "PlayFair";
+    src: url("../fonts/PlayfairDisplaySC-Regular.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "PlayFair-bold";
+    src: url("../fonts/PlayfairDisplaySC-Bold.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "PlayFair-bold";
+    src: url("../fonts/PlayfairDisplaySC-Bold.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/EBGaramond.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope.ttf") format('ttf');
+} */
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: var(--grey-2);
+}
