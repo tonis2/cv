@@ -16,3 +16,38 @@
     font-size: 3vw;
 }
 
+
+.divider {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.2fr 0.6fr 0.2fr;
+    font-size: clamp(16px, 5vw, 26px);
+    font-family: manrope;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    position: relative;
+    height: 40px;
+}
+
+.divider:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    border: 1.5px solid var(--black);
+    top: -7px;
+}
+
+
+.divider:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    border: 1.5px solid var(--black);
+    bottom: -7px;
+}
+
+.divider span {
+    text-align: center;
+}

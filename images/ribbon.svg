@@ -18,8 +18,8 @@
   <path
     id="shape0"
     transform="matrix(0.9993721507 -0.035434755727 0.035434759483 0.99937199188 -3.6576164424 94.841740855)"
-    fill="#0b0000"
-    stroke="#090000"
+    fill="#1c1f33"
+    stroke="#1c1f33"
     stroke-width="3.2544"
     stroke-linecap="square"
     stroke-linejoin="bevel"
@@ -29,7 +29,7 @@
     transform="matrix(1.0000001705 0 0 1.0000000363 143.99996149 59.151131832)"
     fill="#ededed"
     fill-rule="evenodd"
-    stroke="#000000"
+    stroke="#1c1f33"
     stroke-width="2.8296"
     stroke-linecap="square"
     stroke-linejoin="bevel"
@@ -39,19 +39,19 @@
     transform="matrix(1.0000001313 0 0 1.0000000286 315.00006452 163.59641539)"
     fill="#ededed"
     fill-rule="evenodd"
-    stroke="#000000"
+    stroke="#1c1f33"
     stroke-width="2.8296"
     stroke-linecap="square"
     stroke-linejoin="bevel"
     d="M0 0C150.861 42.2774 346.465 42.2774 586.81 3.96028e-15C568.07 23.9017 552.034 47.6334 538.703 71.1949C539.411 75.1849 556.164 94.9961 588.96 130.629C372.025 110.162 359.486 174.311 0 128.622Z"/><path id="shape0" transform="translate(151.19999912, 92.879999459)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 14.04C0 4.56366 20.2688 4.57121 24.84 0Z"/><path id="shape1" transform="translate(155.51999909, 109.07999937)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 4.32C6.25031 4.32 11.9345 0 19.44 0Z"/><path id="shape2" transform="translate(153.35999911, 118.79999931)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 8.64C0 4.05751 17.5973 2.92265 20.52 0Z"/><path id="shape3" transform="translate(153.35999911, 132.83999923)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 5.4C8.47176 5.4 15.6272 0 23.76 0Z"/><path id="shape4" transform="translate(154.4399991, 141.47999918)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 7.56C7.12043 7.56 16.7363 0 22.68 0Z"/><path id="shape5" transform="translate(149.03999913, 150.11999913)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 10.8C8.91387 10.8 17.0393 0 24.84 0Z"/><path id="shape6" transform="translate(154.4399991, 165.23999904)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 4.32C4.11279 4.32 11.894 3.22595 15.12 0Z"/><path id="shape7" transform="translate(152.27999911, 181.43999894)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0C2.36499 2.36499 4.61332 0 7.56 0Z"/><path id="shape8" transform="translate(151.19999912, 190.07999889)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 4.32C2.40228 4.32 9.09901 1.70099 10.8 0Z"/><path id="shape9" transform="translate(321.83999813, 177.11999897)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0C8.67573 0 43.5399 10.0599 49.68 16.2Z"/><path id="shape10" transform="translate(322.91999812, 188.9999989)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0C11.0659 0 29.5 10.06 36.72 17.28Z"/><path id="shape11" transform="translate(322.91999812, 206.79096059)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0.569038C2.89414 -2.32511 21.1837 6.63273 23.76 9.20904Z"/><path id="shape12" transform="translate(321.83999813, 220.31999872)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0C5.05605 0 10.6283 2.07415 15.12 4.32Z"/><path id="shape13" transform="translate(320.75999813, 234.35999864)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0C5.27827 0 8.92283 2.16 14.04 2.16Z"/><path id="shape14" transform="translate(319.67999814, 249.38557482)" fill="none" stroke="#000000" stroke-width="2.16" stroke-linecap="square" stroke-linejoin="bevel" d="M0 1.17442C3.16941 -1.99498 11.9901 2.25442 16.2 2.25442Z"/>
     <text>
       <textPath filter="url(#f3)" xlink:href="#shape01" startOffset="140">
-          <tspan class="title" dx="5" dy="90"  fill="black">Tonis Anton</tspan>
+          <tspan class="title" dx="5" dy="90"  fill="#1c1f33">Tonis Anton</tspan>
       </textPath>
     </text>
     <text>
       <textPath filter="url(#f3)" xlink:href="#shape02" startOffset="90">
-          <tspan class="second-title" dx="5" dy="85"  fill="black">Developer resume</tspan>
+          <tspan class="second-title" dx="5" dy="85"  fill="#1c1f33">Developer resume</tspan>
       </textPath>
     </text>
 </svg>
