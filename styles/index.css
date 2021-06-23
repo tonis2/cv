@@ -1,5 +1,6 @@
 @import url("./page.css");
 @import url("./news.css");
+@import url("./portfolio.css");
 
 :root {
     --red: #fc5c65;
@@ -52,4 +53,15 @@ body {
     background: var(--gray2);
     grid-template-columns: 0.8fr;
     overflow-x: hidden;
+    gap: 20px 0;
+}
+
+
+.fill-grey  {
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+}
+
+.fill-grey:hover {
+    filter: none;
 }

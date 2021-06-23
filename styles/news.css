@@ -1,6 +1,5 @@
 news-column {
     display: grid;
-    margin: 20px 0;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2;
     width: 100%;
@@ -32,15 +31,8 @@ news-column .self-image {
     grid-row: 2/3;
     width: 100%;
     grid-column: 6/7;
-    filter: grayscale(100%);
-    transition: 0.2s ease;
 }
 
-news-column .self-image:hover {
-    filter: none;
-}
 
-news-column portfolio-item {
-    display: grid;
-    grid-row: 2;
-}
+
+
