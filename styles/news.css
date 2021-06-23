@@ -1,0 +1,29 @@
+news-column {
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2;
+}
+
+news-column news-title {
+    font-size: clamp(22px, 5vw, 48px);
+    font-family: ebGarmond;
+    font-style: italic;
+    font-weight: bold;
+    grid-row: 1;
+    grid-column: 1/6;
+}
+
+news-column p {
+    font-size: clamp(16px, 3vw, 20px);
+    font-family: manrope;
+    grid-row: 2;
+    grid-column: 1/6;
+    line-height: 1.4;
+}
+
+news-column img {
+    grid-row: 2;
+    width: 100%;
+    grid-column: 6/7;
+}

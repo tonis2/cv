@@ -1,5 +1,5 @@
 @import url("./page.css");
-
+@import url("./news.css");
 
 :root {
     --red: #fc5c65;
@@ -19,11 +19,6 @@
 }
 
   
-@font-face {
-    font-family: "newspaper";
-    src: url("../fonts/newspaper.woff2") format('woff2');
-}
-
 @font-face {
     font-family: "Deutschlander";
     src: url("../fonts/Deutschlander.woff2") format('woff2');
@@ -55,6 +50,6 @@ body {
     align-content: center;
     justify-items: center;
     background: var(--gray2);
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.8fr;
     overflow-x: hidden;
 }
