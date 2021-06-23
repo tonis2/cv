@@ -3,6 +3,7 @@ news-column {
     margin: 20px 0;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2;
+    width: 100%;
 }
 
 news-column news-title {
@@ -12,17 +13,22 @@ news-column news-title {
     font-weight: bold;
     grid-row: 1;
     grid-column: 1/6;
+    text-align: left;
 }
 
 news-column p {
     font-size: clamp(16px, 3vw, 20px);
     font-family: manrope;
-    grid-row: 2;
-    grid-column: 1/6;
     line-height: 1.4;
+    grid-column: 1/7;
 }
 
-news-column img {
+news-column .introduction {
+    grid-row: 2;
+    grid-column: 1/6;
+}   
+
+news-column .self-image {
     grid-row: 2;
     width: 100%;
     grid-column: 6/7;
