@@ -1,5 +1,5 @@
 @import url("./page.css");
-@import url("./news.css");
+@import url("./intro.css");
 @import url("./portfolio.css");
 
 :root {
@@ -17,6 +17,7 @@
     --title: "EB Garamond", serif;
     --semi-title: "Playfair Display", serif;
     --text: "Manrope", sans-serif;
+    --text-size: clamp(16px, 4vw, 21px);
 }
 
   
@@ -64,4 +65,8 @@ body {
 
 .fill-grey:hover {
     filter: none;
+}
+
+[slot] {
+    display: none;
 }
