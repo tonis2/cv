@@ -1,7 +1,11 @@
 import { LitElement, html, css } from 'https://unpkg.com/lit@2.0.0-rc.1/index.js?module';
-import { classMap } from 'https://unpkg.com/lit@2.0.0-rc.1/directives/class-map.js?module';
 
 class PortfolioItem extends LitElement {
+    constructor() {
+        super()
+        this.open = false
+    }
+
     connectedCallback() {
         this.logo = this.getAttribute("logo")
         this.link = this.getAttribute("link") || null
@@ -10,7 +14,23 @@ class PortfolioItem extends LitElement {
     }
 
     showMore() {
+        this.open = !this.open
+        this.requestUpdate()
+    }
 
+    openImage(event) {
+        window.dispatchEvent(new CustomEvent('open-image', { detail: event.currentTarget.src }))
+    }
+
+    firstUpdated() {
+        const slots = this.querySelector("[slot='extra-content']")
+        if (slots) {
+            for (let child of slots.assignedSlot.assignedNodes()[0].children) {
+                child.onclick = this.openImage.bind(this)
+            }
+        } else {
+            this.shadowRoot.querySelector("#more-info").remove()
+        }
     }
 
     static get styles() {
@@ -20,8 +40,8 @@ class PortfolioItem extends LitElement {
                 width: 100%;
                 border-left: solid 0.5px var(--black);
                 border-right: solid 0.5px var(--black);
-       
-                padding: 30px;
+                border-bottom: solid 0.5px var(--black);
+                padding: 30px 30px 10px 30px;
                 box-sizing: border-box;
                 position:relative;
             }
@@ -61,6 +81,15 @@ class PortfolioItem extends LitElement {
                 display:block!important;
             }
 
+            ::slotted([slot='extra-content']) {
+                justify-content: center;
+                display:grid!important;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                width: 100%;
+                height: auto;
+            }
+
             .fill-grey  {
                 filter: grayscale(100%);
                 transition: 0.2s ease;
@@ -70,19 +99,17 @@ class PortfolioItem extends LitElement {
                 filter: none;
             }
             
-
             #more-info {
                 display: grid;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 grid-template-columns: 105px 35px;
-                width: 150px;
-                position: absolute;
-                left: 15px;
-                bottom: -5px;
+                width: auto;
+                margin: 0 auto;
                 cursor: pointer;
                 transition: 0.2s ease;
+                margin-top: 15px;
             }
 
             #more-info:hover {
@@ -90,24 +117,34 @@ class PortfolioItem extends LitElement {
             }
 
             #more-info span {
+                display:block;
+                width: 200px;
                 font-size: calc(var(--text-size) - 3px);
             }
 
             #more-info img {
-                height: 35px;
-                width: 35px;
+                height: 25px;
+                width: 25px;
+            }
+
+            @media only screen and (max-width: 800px) {
+                ::slotted([slot='extra-content']) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
             }
         `;
     }
+    
     render() {
         return html`
-                   <img class="entry-logo fill-grey" src="${this.logo}"></img>
-                   ${this.link ? html`<a class="link" href="${this.link}" target="_blank">${this.title}</a>` : null}
-                   <slot name="content"></slot>
-                   <section @click=${this.showMore} id="more-info">
-                        <span>More info...</span>
-                        <img src="/images/more.png"></img>
-                   </section>
+                <img class="entry-logo fill-grey" src="${this.logo}"></img>
+                <a class="link" href="${this.link}" target="_blank">${this.title}</a>
+                <slot name="content"></slot>
+                <slot name="extra-content" style="display: ${this.open ? 'grid': 'none'};"></slot>
+                <section @click=${this.showMore.bind(this)} id="more-info">
+                    <span>${!this.open ? "Show gallery..." : "Hide gallery.."}</span>
+                    <img src="/images/more.png"></img>
+                </section>
                    `;
     }
 }

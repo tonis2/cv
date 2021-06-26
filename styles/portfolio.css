@@ -14,3 +14,11 @@
     text-align: left;
 }
 
+
+extra img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: solid 1px var(--black);
+    cursor: pointer;
+}
