@@ -1,5 +1,7 @@
 import "./components/svg.js"
 import "./components/portfolio.js"
+import "./components/skill.js"
+
 
 document.querySelector(".date").innerHTML = new Date().toISOString().split("T")[0]
 window.addEventListener("open-image", (e) => {

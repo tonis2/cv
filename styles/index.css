@@ -1,6 +1,7 @@
 
 @import url("./intro.css");
 @import url("./portfolio.css");
+@import url("./skills.css");
 
 :root {
     --red: #fc5c65;
@@ -131,6 +132,7 @@ body {
     border-bottom: 1px solid var(--black);
     position: relative;
     height: 40px;
+    margin: 20px 0;
 }
 
 .divider:before {

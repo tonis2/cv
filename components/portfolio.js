@@ -110,6 +110,7 @@ class PortfolioItem extends LitElement {
                 cursor: pointer;
                 transition: 0.2s ease;
                 margin-top: 15px;
+                font-family: 'manrope';
             }
 
             #more-info:hover {
@@ -118,7 +119,7 @@ class PortfolioItem extends LitElement {
 
             #more-info span {
                 display:block;
-                width: 200px;
+                width: 140px;
                 font-size: calc(var(--text-size) - 3px);
             }
 
