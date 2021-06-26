@@ -52,7 +52,7 @@ class SkillItem extends LitElement {
 
             #stars {
                 display:grid;
-                grid-template-columns: repeat(5, 20px);
+                grid-template-columns: repeat(5, 15px);
                 justify-content:center;
                 align-content:center;
             }
