@@ -46,10 +46,6 @@ class PortfolioItem extends LitElement {
                 position:relative;
             }
 
-            .content:hover > .fill-grey {
-                filter:none;
-            }
-
             .entry-logo {
                 width: clamp(120px, 10vw, 200px);
                 height: auto;
@@ -88,15 +84,6 @@ class PortfolioItem extends LitElement {
                 gap: 20px;
                 width: 100%;
                 height: auto;
-            }
-
-            .fill-grey  {
-                filter: grayscale(100%);
-                transition: 0.2s ease;
-            }
-            
-            .fill-grey:hover {
-                filter: none;
             }
             
             #more-info {
@@ -138,7 +125,7 @@ class PortfolioItem extends LitElement {
     
     render() {
         return html`
-                <img class="entry-logo fill-grey" src="${this.logo}"></img>
+                <img class="entry-logo" src="${this.logo}"></img>
                 <a class="link" href="${this.link}" target="_blank">${this.title}</a>
                 <slot name="content"></slot>
                 <slot name="extra-content" style="display: ${this.open ? 'grid': 'none'};"></slot>

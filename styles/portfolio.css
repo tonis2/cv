@@ -22,3 +22,42 @@ extra img {
     border: solid 1px var(--black);
     cursor: pointer;
 }
+
+
+portfolio-item {
+    filter: grayscale(100%);
+    transition: 0.2s ease;  
+}
+
+
+portfolio-item:hover {
+    filter: none;
+}
+
+
+examples {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 5px 0;
+}
+
+examples span {
+    font-size: clamp(24px, 4vw, 32px);
+    font-family: ebGarmond;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: solid 0.5px var(--black);
+    margin-bottom: 10px;
+}
+
+
+examples a {
+    font-family: 'manrope';
+    font-size: clamp(14px, 4vw, 18px);
+    color: var(--black);
+}
+
+examples a:hover {
+    color: var(--blue);
+}

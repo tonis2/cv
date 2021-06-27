@@ -50,6 +50,8 @@ class SkillItem extends LitElement {
                 height: auto;
             }
 
+  
+            
             #stars {
                 display:grid;
                 grid-template-columns: repeat(5, 15px);
@@ -57,9 +59,6 @@ class SkillItem extends LitElement {
                 align-content:center;
             }
 
-            @media only screen and (max-width: 800px) {
-               
-            }
         `;
     }
     
