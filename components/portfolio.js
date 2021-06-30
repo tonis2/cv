@@ -131,7 +131,7 @@ class PortfolioItem extends LitElement {
                 <slot name="extra-content" style="display: ${this.open ? 'grid': 'none'};"></slot>
                 <section @click=${this.showMore.bind(this)} id="more-info">
                     <span>${!this.open ? "Show gallery..." : "Hide gallery.."}</span>
-                    <img src="/images/more.png"></img>
+                    <img src="images/more.png"></img>
                 </section>
                    `;
     }
