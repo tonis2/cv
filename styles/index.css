@@ -157,3 +157,46 @@ body {
 .divider span {
     text-align: center;
 }
+
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    background: var(--white);
+    padding: 10px;
+    color: var(--black);
+    border: dashed 0.5px var(--black);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 800px) {
+    #contact {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        position:relative;
+    }
+}
+
+#contact .col {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: start;
+    gap: 0 10px;
+    font-size: clamp(8px, 3vw, 16px);
+}
+
+#contact .col img {
+    width: 25px;
+    height: auto;
+}
+
+#contact .col a {
+    color: var(--blue);
+}

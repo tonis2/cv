@@ -6,6 +6,8 @@
     gap: 50px 0;
 }
 
+
+
 .experiences .title {
     font-size: clamp(22px, 4vw, 32px);
     font-family: ebGarmond;
@@ -31,6 +33,10 @@ portfolio-item {
 
 
 portfolio-item:hover {
+    filter: none;
+}
+
+portfolio-item:hover > a {
     filter: none;
 }
 
