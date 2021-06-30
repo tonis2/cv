@@ -30,5 +30,13 @@
 }
 
 
+.intro > img {
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+}
+
+.intro:hover > img {
+    filter: none;
+}
 
 
